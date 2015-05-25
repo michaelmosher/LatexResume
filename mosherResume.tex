@@ -1,0 +1,74 @@
+%Michael Mosher's Resume
+%Created: Sept, 2014
+%Updated: May, 2015
+\documentclass[12pt]{article}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage[absolute]{textpos}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage[framemethod=TikZ]{mdframed}
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1.2in,bmargin=.5in,lmargin=0.5in,rmargin=2in,headheight=0in,headsep=0in,footskip=.3in}
+\renewcommand{\labelitemi}{\bf--}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+\newenvironment{resblock}[1]
+  {\noindent{\large\bf{#1}}}
+  {\par\vspace{0.35in}}
+\begin{document}
+\include{title}
+%\begin{resblock}{Profile}\par
+%  \hangindent=1.5em
+%  \hangafter=1
+%A flexible, reliable hospitality employee seeking to change industries and contribute logical reasoning, critical thinking, and persuasive communicating to improve the overall success and efficiency of a team.
+%\end{resblock}
+%\resline{2.15in}
+\setlength\multicolsep{0pt}
+\begin{resblock}{Work Responsibilities \& Skills}
+  \begin{changemargin}{3em}{0em}
+      \textbf{System Administrator} SpinDance, Inc.\hfill August 2014--present
+      \begin{mdframed}[roundcorner=10pt]
+        \begin{itemize}
+          \item First-tier monitoring support
+          \item Infrastructure Tools Development
+          \item Increasing efficiency by scripting simple, tedious tasks
+%          \begin{multicols}{3}
+%            \textbf{Bash}
+%
+%            \textbf{Python}
+%
+%            \textbf{Ruby}
+%          \end{multicols}
+          \item Creating and maintaining monitoring dashboards
+%          \begin{multicols}{3}
+%            \begin{itemize}
+%              \item HTML
+%              \item CSS
+%              \item JavaScript
+%            \end{itemize}
+%          \end{multicols}
+
+          \item Automated deployment and management of virtual servers
+%          \begin{multicols}{2}
+%            \begin{itemize}
+%              \item Chef
+%              \item Jenkins
+%            \end{itemize}
+%          \end{multicols}
+        \end{itemize}
+        \end{mdframed}
+      \item[Prince Conference Center] Setup Crew, Oct '07--Sept '13
+      \begin{itemize}
+%        \begin{multicols}{2}
+%        \end{multicols}
+        \item Set stuff up
+        \item Tore stuff down
+      \end{itemize}
+  \end{changemargin}
+\end{resblock}
+\resline{4.33in}
+\begin{resblock}{Additional Skills}
+
+\end{resblock}
+\end{document}
