@@ -9,13 +9,14 @@
 \usepackage{multicol}
 \usepackage[framemethod=TikZ]{mdframed}
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=1.2in,bmargin=0.5in,lmargin=0.5in,rmargin=2in,headheight=0in,headsep=0in,footskip=.3in}
+%\geometry{letterpaper,tmargin=1.2in,bmargin=0.5in,lmargin=0.5in,rmargin=2in,headheight=0in,headsep=0in,footskip=.3in}
+\geometry{letterpaper,tmargin=1.2in,bmargin=0.5in,lmargin=1.25in,rmargin=1.25in,headheight=0in,headsep=0in,footskip=.3in}
 \renewcommand{\labelitemi}{\bf--}
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
 \newenvironment{resblock}[1]
   {\noindent{\large\bf{#1}}}
-  {\par\vspace{0.35in}}
+  {\par\vspace{1em}}
 \begin{document}
 \include{title}
 %\begin{resblock}{Profile}\par
@@ -30,7 +31,7 @@
     \item[$\bullet$]Linux Server \mbox{Administration}
     \item[$\bullet$]Server \mbox{Automation} with Chef
     \item[$\bullet$]BASH Scripting
-    \item[$\bullet$]Basic Database \mbox{management}
+    \item[$\bullet$]MySQL \& SQL Server
     \item[$\bullet$]Automated Testing with RSpec
     \item[$\bullet$]Ruby Scripting
     \item[$\bullet$]Python Scripting
@@ -42,17 +43,17 @@
   \end{changemargin}
 \end{resblock}
 
-\resline{3.0in}
+%\resline{3.0in}
 \begin{resblock}{Work Experience}
 \vspace{1em}
 
   \textbf{System Administrator}, SpinDance\hfill August 2014--present\hrule
   \begin{changemargin}{3em}{0em}
-    \textbf{Monitoring}---Quickly recognizing system abnormalities and addressing errors before our customers notice any issues. Also designing and maintaining a set of dashboards to track server metrics. 
+    \textbf{Monitoring}---Quickly recognizing system abnormalities and addressing errors before our customers notice any issues. Also designing and maintaining a set of dashboards to watch server metrics
 
-    \textbf{Automating}---Instructing computers on how to perform repetitive tasks using common scripting languages and popular automation tools for testing and code deployments.
+    \textbf{Automating}---Instructing computers on how to perform repetitive tasks using common scripting languages and popular automation tools for testing and code deployments
 
-    \textbf{Supporting}---Promptly responding to customer requests for system modifications, code deploys, and sql querys.
+    \textbf{Supporting}---Promptly responding to customer requests for system modifications, code deploys, and sql queries
   \end{changemargin}
 
   \textbf{Setup Crew}, Prince Conference Center\hfill October 2007--September 2013\hrule
@@ -65,21 +66,23 @@
   \end{changemargin}
 \end{resblock}
 
-\resline{7.9in}
+%\resline{7.85in}
 \begin{resblock}{Education}
 \vspace{1em}
 
-  \textbf{Calvin College}, Grand Rapids, MI\hfill \hrule
+  \textbf{Calvin College}, Grand Rapids MI\hfill 2011\hrule
   \begin{changemargin}{3em}{0em}
- Bachelor of Arts, Graduated May, 2011
- Majored in Mathematics and Philosophy; GPA: 3.497
- Excelled in courses on Java, Ruby on Rails, Adobe Flash,
- linear algebra, computational logic, and symbolic logic
+    \textbf{Bachelor of Arts}---Mathematics \& Philosophy
+
+    Excelled in courses on programming languages, linear algebra, computational logic, and symbolic logic
   \end{changemargin}
 \end{resblock}
 
-\resline{10in}
+%\resline{9.65in}
 \begin{resblock}{Additional Skills}
+\vspace{1em}
 
+    \textbf{Saxophone}---Alto \& Tenor, 10+ years experience
+%   \LaTeX
 \end{resblock}
 \end{document}
