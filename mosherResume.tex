@@ -1,7 +1,7 @@
 %Michael Mosher's Resume
 %Created: Sept, 2014
-%fpdated: May, 2015
-\documentclass[12pt]{article}
+%Updated: Feb, 2018
+\documentclass[11pt]{article}
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage[absolute]{textpos}
@@ -9,53 +9,44 @@
 \usepackage{multicol}
 \usepackage[framemethod=TikZ]{mdframed}
 \pagestyle{empty}
-%\geometry{letterpaper,tmargin=1.2in,bmargin=0.5in,lmargin=0.5in,rmargin=2in,headheight=0in,headsep=0in,footskip=.3in}
 \geometry{letterpaper,tmargin=1.2in,bmargin=0.5in,lmargin=1.25in,rmargin=1.25in,headheight=0in,headsep=0in,footskip=.3in}
 \renewcommand{\labelitemi}{\bf--}
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
 \newenvironment{resblock}[1]
-  {\noindent{\large\bf{#1}}}
+  {\noindent{\Large\textbf{#1}}}
   {\par\vspace{1em}}
 \begin{document}
 \include{title}
+%
 %\begin{resblock}{Profile}\par
 %  \hangindent=1.5em
 %  \hangafter=1
 %A flexible, reliable hospitality employee seeking to change industries and contribute logical reasoning, critical thinking, and persuasive communicating to improve the overall success and efficiency of a team.
 %\end{resblock}
-\setlength\multicolsep{0pt}
-\begin{resblock}{Skills}
+
+\begin{resblock}{Achievements}\par
   \begin{changemargin}{0em}{0em}
-  \begin{multicols}{3}\begin{flushleft}\begin{itemize}
-%    \item[$\circ$]SEXY
-    \item[$\circ$]Linux server \mbox{administration}
-    \item[$\circ$]BASH scripting
-    \item[$\circ$]MySQL usage and management% \& SQL Server
-    \item[$\circ$]Containerization with Docker\columnbreak
-    \item[$\circ$]Infrastucture \mbox{automation} with Chef
-    \item[$\circ$]Creating scripts and tools with Ruby
-    \item[$\circ$]Test-driven development with RSpec and Mocha\columnbreak
-%    \item[$\circ$]Python Scripting
-%    \item[$\circ$]Rails Support
-%    \item[$\circ$]PHP Support
-    \item[$\circ$]Application development with NodeJS and TypeScript
-    \item[$\circ$]Designing ReactJS components
-    \item[$\circ$]Programmatic usage of Slack and  other RESTful APIs
-%    \item[$\circ$]HTML5 \& CSS3
-  \end{itemize}\end{flushleft}\end{multicols}
+  \begin{itemize}
+    \item[$\circ$]Prepared materials for \textbf{coaching clients to DevOps success}
+    \item[$\circ$]\textbf{Developed a Slack bot} to stimulate a "ChatOps" culture
+    \item[$\circ$]Created monitoring dashboards to \textbf{visualize service level indicators}
+    \item[$\circ$]\textbf{Implemented a solution to synchronize time tracking} across multiple platforms
+  \end{itemize}
   \end{changemargin}
 \end{resblock}
+%\resline{2.575in}
 
-%\resline{3.0in}
 \begin{resblock}{Work Experience}
-\vspace{1em}
+\vspace{0.6em}
 
   \textbf{System Administrator}, SpinDance\hfill August 2014--present\strut\hrule
   \begin{changemargin}{3em}{0em}
-    \textbf{Automating}---Instructing computers on how to perform repetitive tasks using common scripting languages and popular automation tools for testing, code deployments, and server provisioning.
+    \textbf{Leadership}---Providing DevOps mentoring to teammates and associates. Evaluating automation tools and establishing best practices for using them.
+
+    \textbf{Automation}---Managing dozens of services on 100+ servers using Chef. Configuring continuous integration for 50+ repositories using Jenkins and TravisCI. Driving Terraform adoption to automate provisioning, as well.
     
-    \textbf{Monitoring}---Quickly recognizing system abnormalities and addressing errors before our customers notice any issues. Also designing and maintaining a set of dashboards to watch server metrics.
+    \textbf{Monitoring}---24/7 on-call support for production servers. Quickly triaging issues to maintain service level objectives.
   \end{changemargin}
 
   \textbf{Setup Crew}, Prince Conference Center\hfill October 2007--September 2013\strut\hrule
@@ -66,6 +57,29 @@
 
     \textbf{Independence}---Frequently worked with little or no supervision and was complimented on my thoroughness and work ethic.
   \end{changemargin}
+\end{resblock}
+%\resline{6.475in}
+
+%\setlength\multicolsep{0pt}
+\begin{resblock}{Skills} % these can be turned on and off depending on job opening
+  \begin{multicols}{3}\begin{flushleft}\begin{itemize}
+%    \item[$\circ$]SEXY
+    \item[$\circ$]Linux \mbox{administration}
+    \item[$\circ$]BASH scripting
+    \columnbreak
+    \item[$\circ$]Release Engineering
+    \item[$\circ$]Databases% \& SQL Server
+%    \item[$\circ$]Containerization with Docker
+    \columnbreak
+%    \item[$\circ$]Creating scripts and tools with Ruby
+%    \item[$\circ$]Test-driven development with RSpec and Mocha
+%    \item[$\circ$]Python Scripting
+%    \item[$\circ$]Rails Support
+%    \item[$\circ$]PHP Support
+    \item[$\circ$]TypeScript
+    \item[$\circ$]Elm
+%    \item[$\circ$]HTML5 \& CSS3
+  \end{itemize}\end{flushleft}\end{multicols}
 \end{resblock}
 
 %\resline{7.85in}
@@ -83,7 +97,7 @@
   \begin{changemargin}{3em}{0em}
     \textbf{Bachelor of Arts}---Mathematics \& Philosophy\hfill May 2011
 
-    Excelled in courses on programming languages, linear algebra, computational logic, and symbolic logic
+    Excelled in courses on programming and logic.
   \end{changemargin}
 \end{resblock}
 
